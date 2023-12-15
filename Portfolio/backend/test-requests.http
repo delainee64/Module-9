@@ -1,0 +1,82 @@
+### CREATE five documents.
+POST http://localhost:3000/projects HTTP/1.1
+content-type: application/json
+
+{
+    "project": "Electric fireplace in living room",
+    "date": "2022-12-01",
+    "cost": "500.00"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/projects HTTP/1.1
+content-type: application/json
+
+{
+    "project": "Master bathroom remodel",
+    "date": "2019-10-15",
+    "cost": "30000.00"
+}
+
+### CREATE 3
+POST http://localhost:3000/projects HTTP/1.1
+content-type: application/json
+
+{
+    "project": "Guest bathroom remodel",
+    "date": "2020-02-25",
+    "cost": "15000.00"
+}
+
+### CREATE 4
+POST http://localhost:3000/projects HTTP/1.1
+content-type: application/json
+
+{
+    "project": "Mudroom remodel",
+    "date": "2023-07-06",
+    "cost": "1000.00"
+}
+
+### CREATE 5
+POST http://localhost:3000/projects HTTP/1.1
+content-type: application/json
+
+{
+    "project": "Fencing in the front and back yard",
+    "date": "2019-09-22",
+    "cost": "20000.00"
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/projects HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/projects/656d0e5dfc96a827487234f2 HTTP/1.1
+
+
+### UPDATE one document's date, by ID.
+### Replace the ID in the following request with one that exists
+### and update the date:
+PUT http://localhost:3000/projects/656d0be87a8454dbdb4ed391 HTTP/1.1
+content-type: application/json
+
+{
+    "project": "Fencing in the front and back yard",
+    "date": "2019-09-22",
+    "cost": "20000.00"
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3000/projects/656d0e59fc96a827487234ee HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/projects HTTP/1.1
+

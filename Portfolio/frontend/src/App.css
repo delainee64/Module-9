@@ -1,0 +1,248 @@
+/* 
+This style sheet can be used for reference
+but not for an assignment.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&family=Plus+Jakarta+Sans:ital,wght@0,700;1,200&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+:root {
+    --flatBlue: rgb(51, 102, 123);
+    --flatBluetwo: rgb(51, 102, 123, .70);
+    --lightGrey:#ECEBF2;
+    --lightGreytwo: #ecebf273;
+    --stoneGrey: rgb(176, 179, 172, .75);
+    --brightBlue: #2B96D9;
+    --seaFoam:#86BDB8;
+    --darkBlue:#122A40;
+    --darkGreen: #4F8C81;
+    --mustard: #D2D095;
+    --lightMustard: rgb(210, 208, 149, .60)
+  }
+/* Center the body in the middle of the viewport 
+by defining min and max widths with auto right/left margins
+*/
+body {       
+background-image: url(images/secret-beach-belize.jpg);
+background-position: top left;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+color: #122A40;
+font-family: 'Oswald', sans-serif;
+font-size: 1.3em;
+line-height: 1.50;
+margin:0 auto;
+padding:2%;
+max-width:800px;
+text-align: center;
+}
+
+/* PAGE LAYOUT 
+Consistant design for each page layout block. 
+*/
+header{
+    background-color: var(--flatBlue);
+    padding: 1%;
+    margin: 4%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--darkBlue);
+    border: 8px solid var(--darkBlue);
+  }
+  header img{
+    width: 60px;
+    height: 60px;
+  }
+  main {
+    background-color: var(--lightGreytwo);
+    text-align: left;
+
+  }
+  section {
+    background-color: var(--lightGreytwo);
+    padding: 1%;
+    margin-top: 3%;
+  }
+  article {
+    background-color: var(--lightMustard);
+    border: 10px solid var(--darkBlue);
+    margin: 5%;
+    padding: 5%;
+  }
+    #webServers {
+      background-color: var(--stoneGrey);
+    }
+    #optimizedImages {
+      background-color: var(--stoneGrey);
+    }
+    #usability {
+      background-color: var(--stoneGrey);
+    }
+    #css {
+      background-color: var(--stoneGrey);
+    }
+    #express {
+      background-color: var(--stoneGrey);
+    }
+
+  footer {
+    background-color: var(--flatBlue);
+    padding: 1%;
+    text-align: center;
+    color: var(--lightGrey)
+  }
+
+/* NAVIGATION
+Simple changes to make anchors look like buttons. 
+*/
+nav {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    line-height: 1.2;
+  }
+  nav a {
+    background-color: var(--mustard);
+    border: 3px solid var(--darkBlue);
+    border-radius: 10px;
+    color:#122A40;
+    padding: 15px;
+    margin: 5px;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  nav a:hover {
+    background-color: var(--brightBlue);
+    border-bottom: 5px solid var(--darkBlue);
+  }
+  nav.local {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--darkBlue);
+  }
+  nav.local a {
+    background-color:var(--seaFoam);
+  }
+  nav.local a:hover {
+    background-color: var(--darkGreen);
+  }
+
+
+/* TABLE */
+table {
+    border-collapse: collapse;
+    margin: 3% auto;
+    padding: 4%;
+    line-height: 1.2;
+    min-width: 90%;
+    max-width: 100%;
+    border: 3px solid var(--darkBlue);
+    background-color: var(--lightMustard);
+  }
+  caption {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  tr {
+    font-family:'Oswald', sans-serif;
+    border-bottom: 1px solid var(--darkBlue);
+    padding: 10px;
+  }
+
+  th {
+    background-color: var(--darkBlue);
+    color: var(--lightGrey);
+    border-bottom: 3px solid var(--darkBlue);
+    padding: 10px;
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  td {
+    border-bottom: 1px solid var(--darkBlue);
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+
+.currency{ text-align: right;}
+.pageOne, .topic, .future, .futureTwo, .pic{ text-align: center;}
+.image-gallery-description {
+  bottom: 0px;
+  width: 100%;
+  box-sizing: border-box;
+} 
+.image-gallery-slide { 
+  margin-bottom: 30px;
+  margin-top: 0;
+ }
+.image-gallery-left-nav, .image-gallery-right-nav {
+  width: 90px;
+}
+.image-gallery-play-button, .image-gallery-fullscreen-button{
+  width: 0;
+}
+
+
+
+/* FORM */
+form {
+    margin: 0 auto;
+  }
+  button, select, input, textarea {
+    font-size: 100%;
+    font-family: 'Oswald', sans-serif;
+    padding: 2%;
+    width: 95%;
+  }
+  fieldset {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    border: 2px solid var(--darkBlue);
+    margin-top: 2%;
+    padding: 2%;
+    background-color: var(--lightGreytwo);
+  }
+    legend {
+      color: var(--darkBlue);
+      background-color: #86BDB8;
+      border: 3px solid var(--darkBlue);
+      font-size: 100%;
+      font-weight: bold;
+    }
+  label {
+    display: block;
+    margin-top: 8px;
+    font-size: 80%;
+  }
+  button {
+    border: 4px solid var(--darkBlue);
+    border-radius: 3px;
+    background-color: var(--darkBlue);
+    color: var(--lightGrey);
+    margin: auto;
+  }
+  button:hover {
+    color: var(--lightGrey);
+    padding: 50px;
+    
+  }
+label input[type="checkbox"], 
+label input[type="radio"] {
+  width:20px;
+  margin:0 0 0 5px;
+  }
+
+  textarea {
+    width: 95%;
+    height: 150px;
+    font-size: 90%;
+    font-family: 'Oswald', sans-serif;
+  }
+  label.required::after {
+    content: " *";
+    color: red;
+  }
+
+
